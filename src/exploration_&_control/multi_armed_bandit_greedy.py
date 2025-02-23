@@ -22,7 +22,7 @@ class BanditSolver:
 
     def select_action(self):
         """ Selects an action using greedy policy """
-            return np.argmax(self.Q_values)  # Exploit (Greedy choice)
+        return np.argmax(self.Q_values)  # Exploit (Greedy choice)
 
     def update_Q_values(self, action, reward):
         """ Updates Q-values using incremental average """
